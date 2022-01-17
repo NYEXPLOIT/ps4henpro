@@ -1,0 +1,47 @@
+<html manifest="cache.manifest">
+<head>
+<title>PS4 HEN PRO 9.00 (NYEXPLOIT)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color:black;background-image:url(henpro.png);
+			background-attachment:fixed;
+			background-size:50%;
+			background-repeat:no-repeat;
+			text-align:center}
+        .info {
+            overflow: hidden;
+            position: fixed;
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            font-size: 30px;
+            font-family: sans-serif;
+            color: #6089f6;
+            transform: translate(-50%, -50%);}
+    </style>
+    <script>
+        function allset() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("allset").style.display = "block";}
+        function awaitpl() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("awaiting").style.display = "block";}
+    </script>
+    <script src="payload.js"></script>
+    <script src="int64.js"></script>
+    <script src="patch.s"></script>
+    <script src="rop.js"></script>
+    <script src="kexploit.js"></script>
+    <script src="webkit.js"></script>
+</head>
+<body onload="setTimeout(poc, 1500);">
+	<div id="loader" class="info">Executando o PAYLOAD... <font color=yellow>AGUARDE!!!</font><br><br><br><br><br><br></div>
+    <div id="loader" class="loader"></div>
+	<div id="awaiting" class="info" style="display:none;font-size:28px;">
+	        <font color=yellow>Exploit</font> carregado com <font color=yellow>sucesso</font>!!!<br><br>Pressione o botão <font color=yellow>O ou PS</font> para sair.<br><br><font color=yellow>Observações:</font><br><font color=yellow>1.</font> Não esqueça de <font color=yellow>remover</font> o USB;<br>
+		<font color=yellow>2.</font> Pode desligar a internet, este host funciona <font color=yellow>offline</font>;<br><font color=yellow>3.</font> Se ocorrer <font color=yellow>falha</font> na exploração do kernel, <font color=yellow>refaça</font> <font color=yellow>todo processo</font>, inclusive excluindo cookies e dados de sites nas configurações do navegador.
+    </div>
+	<div style="text-align:left;position:fixed;left:10px;bottom:10px;width:100%;font-size:22px;color:#fff">Agradecimento especial: <font color=#5ffa11>TheFloW-SpecterDev-ChendoChap-Znullptr-Sleirsgoevy-SiSTRo-e todos que contribuem com a cena PS4.</font></div></div></div>
+</body>
+</html>
